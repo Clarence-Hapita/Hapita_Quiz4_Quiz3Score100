@@ -1,0 +1,23 @@
+def right_triangle(height):
+    
+    if height <=0:
+        print("May height bang negative??")
+        return
+    for i in range(1,height + 1):
+        print("*" * i)
+
+username = input("Enter Username:")
+password = input("Enter Password:")
+
+while True:
+    if username == "clarence" and password == "hapita":
+        choice = input("Do you want to print a right triangle? (Yes or No):")
+        if choice == "Yes":
+            right_triangle(10)
+        else:
+            print("You don't want?? okayy bye!")
+            break
+    else:
+        print("Your username or password is incorrect!")
+        break
+      
